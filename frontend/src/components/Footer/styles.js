@@ -8,6 +8,7 @@ export const FooterContainer = styled.div`
     color: var(--white);
     padding: 3rem;
     border-top: 1px solid var(--white);
+    z-index: 1;
     
     & .center {
         line-height: 2.5;

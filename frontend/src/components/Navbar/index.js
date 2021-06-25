@@ -12,7 +12,7 @@ const Navbar = ({ theme }) => {
     const [panelState, setPanelState] = useState(false)
     const { loading } = useContext(web3Context);
 
-    let Navlist = ['', 'Dao', 'Governance', 'Team', 'Contact'];
+    let Navlist = ['', 'Governance', 'Team', 'Contact', 'FAQ'];
     Navlist = Navlist.map((item, i) => {
         return (
             <NavLink key={i} exact to={item.replace('','/').toLowerCase()} className='mainSpacing'>

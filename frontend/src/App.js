@@ -1,7 +1,11 @@
 import { useContext } from 'react';
+import { Switch, Route } from "react-router-dom";
 import './App.css';
 import { web3Context } from './components/Context';
 import Navbar from "./components/Navbar";
+import ScrollTop from "./components/ScrollTop";
+import Home from './pages/Home';
+import Footer from "./components/Footer";
 
 const ethereum = window.ethereum;
 let updateAccount;
@@ -13,6 +17,11 @@ const App = () => {
   return (
     <div className="grid App">
       <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+      <Footer />
+      <ScrollTop />
     </div>
   );
 }
