@@ -20,6 +20,10 @@
   --mainTransition: all 2s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
   display: inline;
@@ -51,6 +55,10 @@ button {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: 0 auto;
+}
+
+.show {
+  visibility: visible;
 }
 
 .hidden {
